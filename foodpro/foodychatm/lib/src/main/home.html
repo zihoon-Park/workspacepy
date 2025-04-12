@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodyChat</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <div class="home-container">
+        <div class="auth-buttons">
+            <a th:href="@{/login}" class="auth-button">로그인</a>
+        </div>
+        <div class="auth-buttons-right">
+            <a th:href="@{/signup}" class="auth-button">회원가입</a>
+        </div>
+        <div class="plate-container">
+            <a th:href="@{/login}" class="plate-half plate-login">
+                <span class="plate-text">로그인</span>
+            </a>
+            <a th:href="@{/signup}" class="plate-half plate-signup">
+                <span class="plate-text">회원가입</span>
+            </a>
+        </div>
+        <div class="home-overlay">
+            <h1 class="home-title">FoodyChat</h1>
+            <p class="home-subtitle">AI와 함께하는 맛있는 대화</p>
+            <div class="home-buttons">
+                <a th:href="@{/chatbot}" class="home-button">챗봇 시작하기</a>
+                <a th:href="@{/image_upload}" class="home-button">이미지 업로드</a>
+            </div>
+        </div>
+    </div>
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>
